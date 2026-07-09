@@ -35,9 +35,8 @@ regsvr32 DWGViewX64.dll
 #### Step 2: Test with Example Html
 Run the provided sample Example Html in IE Mode to verify functionality.
 
-**Sample Code**
+**Help For Developers**
 
-Sample Code (Html) for your reference:
 ```
 DrawingFile
 Property DrawingFile as String
