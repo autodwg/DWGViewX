@@ -2,8 +2,8 @@
 A dwg viewer ActiveX control. View, zoom, pan, rotate, change background color, turn on/off layers, print with this littlie viewer. It is that easy and you are managing all your CAD drawings without AutoCAD.
 
 AutoDWG Free DWG Viewer Online Solutions：
-[Link1](https://www.autodwg.com/opendwg/)
-[Link2](https://www.dwgsee.com/online_viewer.html)
+- [Link1](https://www.autodwg.com/opendwg/)
+- [Link2](https://www.dwgsee.com/online_viewer.html)
 
 ### Key features:
 - View DWG, DXF and DWF in versions from R2.5 to 2027.
