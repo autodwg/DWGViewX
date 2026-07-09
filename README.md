@@ -15,6 +15,7 @@ AutoDWG Free DWG Viewer Online Solutions：
 ![DWGViewX Interface:](https://www.autodwg.com/img/DWGViewX-interface.png)
 
 ### Free Trial Download Link
+https://github.com/autodwg/DWGViewX/releases/download/v2.0.8/DWGViewXProV2.0.8.zip 
 
 
 ## User Guide
