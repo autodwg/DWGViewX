@@ -34,7 +34,7 @@ Manually register the DLL using command:
 regsvr32 DWGViewX64.dll
 ```
 #### Step 2: Test with Example Html
-Run the provided sample Example Html in IE Mode to verify functionality.
+Run the provided sample Example Html in **IE Mode** to verify functionality.
 
 **Help For Developers**
 
