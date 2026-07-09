@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft FrontPage 4.0">
+</HEAD>
+<script language="javascript">
+function InitCox()
+{
+	DwgViewX.bRealTimePan = 1;
+	DwgViewX.OpenZoomextend = 0;
+	DwgViewX.BlackAndWhite = 1;
+	DwgViewX.AddFontPath("c:\\Fonts\\");
+	DwgViewX.EnableContextMenu = 0;
+}
+function CheckData(form)
+{
+	var vPath;
+	vPath = form.Log_Sub.value;
+
+	DwgViewX.SetDwgFile(vPath) ;
+	return true;
+}
+</script>
+<BODY onload="javascript:InitCox()">
+<OBJECT id=DwgViewX 
+style="left: 0px; top: 0px" 
+classid=clsid:AC53EFE4-94A7-47E6-BBFC-E9B9CF322299 VIEWASTEXT width="650" height="400">
+  <param name="_Version" value="65536">
+  <param name="_ExtentX" value="17198">
+  <param name="_ExtentY" value="10266">
+  <param name="_StockProps" value="0"></OBJECT>
+<form name="form1" action="" method="post">
+
+<INPUT type="file" value="d:\abcd.wrl" id=submit1 name=Log_Sub class=TextEdit>
+<input type ="button" name="button1" value="View It" onclick="javascript:return(CheckData(this.form))"> 
+
+</form>
+</BODY>
+</HTML>

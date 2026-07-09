@@ -1,0 +1,87 @@
+<HTML>
+<HEAD>
+</HEAD>
+<script>
+function ZoomIn()
+{
+     DWGViewX.ZoomIn();
+}
+function ZoomOut()
+{
+	DWGViewX.ZoomOut();
+}
+function ZoomAll()
+{
+	DWGViewX.ZoomAll();
+}
+function HideToolbar()
+{
+	DWGViewX.ShowToobar = !DWGViewX.ShowToobar
+}
+function HideLayout()
+{
+	DWGViewX.ShowLayoutBar = !DWGViewX.ShowLayoutBar
+}
+
+function Pan()
+{
+	DWGViewX.PanByMouse();
+}
+
+function ZoomWindow()
+{
+	DWGViewX.ZoomRectByMouse();
+}
+
+function Print()
+{
+	DWGViewX.PrintNoWindow = 1;		// 0 show AutoDWG print setting dialog box
+						// 1 Do NOT show AutoDWG print setting dialog box
+
+	DWGViewX.UseDefaultPrint = 0;		// 0 use default printer, if the printer is not found, then call the Windows print setup dialog
+						// 1 show Windows printer setup dialog
+
+	DWGViewX.PrintBlackAndWhite = 1;	// 1 Black and white mode
+						// 0 256 color mode
+
+	DWGViewX.UseDefaultPenWidth  = 0;	// use CAD default pen width
+						// 0 use user's defined pen width
+	DWGViewX.PrintType = 1 			// 0 Print Current view
+						// 1 Print Zoom Extends
+						// 2 Print Window/ selected area
+
+	// DWGViewX.SetPrintArea(0,0, 100,100); // when DWGViewX.PrintType = 2 , set print size
+	DWGViewX.SetAllPenWidth(1.2);		// set all pen is 1.2
+	DWGViewX.SetPenWidth(1, 0.05);		// set red (1) color's pen width is 0.05
+						// pen width value is one of below:
+						// 0.00 0.05 0.09 0.13 0.15 0.18 0.20 0.25
+						// 0.30 0.35 0.40 0.50 0.53 0.60 0.70 0.80
+						// 0.90 1.00 1.06 1.20 1.40 1.58 2.00 2.11
+
+
+	DWGViewX.Print();
+
+}
+function BackGround()
+{
+	DWGViewX.Background += 1;
+}
+function Rotate()
+{
+	DWGViewX.Rotate(90);
+}
+</script>
+<BODY >
+
+<a href="javascript:ZoomIn()">Zoom In</a> | <a href="javascript:ZoomOut()">Zoom Out</a> | <a href="javascript:ZoomAll()">Zoom All</a>          
+| <a href="javascript:ZoomWindow()">Zoom Window</a>| <a href="javascript:Pan()">Pan</a>| <a href="javascript:HideToolbar()">Show/Hide Toolbar</a>  
+| <a href="javascript:HideLayout()">Show/HideLayoutbar</a>     
+| <a href="javascript:BackGround()">BackGround</a>  
+| <a href="javascript:Print()">Print</a>   
+| <a href="javascript:Rotate()">Rotate</a>        
+<OBJECT id=DWGViewX classid="clsid:AC53EFE4-94A7-47E6-BBFC-E9B9CF322299" codebase="http://www.autodwg.com/dwg-viewer/dwgviewx.cab" width="800" height="600">
+   <param name="DrawingFile" value="Office.dwg">  
+</OBJECT>
+
+</BODY>
+</HTML>
